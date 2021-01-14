@@ -184,7 +184,7 @@ Parameters:
     AllowedPattern: "(?=^.{3,63}$)(?!^(\\d+\\.)+\\d+$)(^(([a-z0-9]|[a-z0-9][a-z0-9\\-]*[a-z0-9])\\.)*([a-z0-9]|[a-z0-9][a-z0-9\\-]*[a-z0-9])$)"
     ConstraintDescription: "Must respect AWS naming conventions"
   ExistingBucket:
-    Description: Set this parameter to False if the S3 bucket you specified in the previous parameter doesn���t exist, and you want the Quick Start to create a new bucket for storing analysis results.
+    Description: Set this parameter to False if the S3 bucket you specified in the previous parameter doesnt exist, and you want the Quick Start to create a new bucket for storing analysis results.
     Type: String
     AllowedValues:
       - Yes
