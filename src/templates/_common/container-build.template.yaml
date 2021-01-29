@@ -473,13 +473,6 @@ Resources:
         Image: !Sub ${AWS::AccountId}.dkr.ecr.${AWS::Region}.amazonaws.com/${ImageName}:${ImageTag}
         Vcpus: 8
         Memory: 16000
-        Volumes:
-          - Host:
-              SourcePath: /opt/aws-cli
-            Name: awscli
-        MountPoints:
-          - ContainerPath: /opt/aws-cli
-            SourceVolume: awscli
       
 Outputs:  
   CodeBuildProject:
